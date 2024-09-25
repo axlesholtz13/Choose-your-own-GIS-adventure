@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS Adventure Game with Pixel Animations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        #game-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #canvas-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        canvas {
+            border: 2px solid #008cba;
+        }
+        h1 {
+            text-align: center;
+        }
+        .choices {
+            margin-top: 20px;
+        }
+        .choices button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .choices button:hover {
+            background-color: #005f5f;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>GIS Adventure with Pixel Animations</h1>
+
+        <div id="canvas-container">
+            <canvas id="animationCanvas" width="400" height="200"></canvas>
+        </div>
+
+        <p id="story-text"></p>
+        <div class="choices" id="choices-container"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
